@@ -19,3 +19,5 @@ const countLetters = function(string) {
   }
   return result;
 };
+
+console.log(assertEqual(countLetters('LHL').L, 2))
