@@ -1,15 +1,15 @@
 const words = ["ground", "control", "to", "major", "tom"];
 
-const map = function(array, callback) {
-  const results = [];
+const map = function(array, callback) { // function receives information from results1
+  const results = []; // use pyhton tutor to see the flow
   for (let item of array) {
     results.push(callback(item));
   }
   return results;
 }
 
-const results1 = map(words, word => word[0]);
-console.log(results1)
+const results1 = map(words, word => word[0]); // words is the array that is passed to map
+console.log(results1) // word => word[0] is the call back portion
 
 const assertArraysEqual = function(arrOne, arrTwo) {
   if (eqArrays(arrOne, arrTwo)) {
