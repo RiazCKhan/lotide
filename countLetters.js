@@ -20,4 +20,5 @@ const countLetters = function(string) {
   return result;
 };
 
-console.log(assertEqual(countLetters('LHL').L, 2))
+// TEST CASE
+// console.log(assertEqual(countLetters('LHL').L, 2))

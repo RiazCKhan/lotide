@@ -48,9 +48,11 @@ const eqObjects = function(object1, object2) {
       return true;
     };
 
+
     
-const abc = { a: "1", b: "2", c: "3" };
+// TEST CASES
+/* const abc = { a: "1", b: "2", c: "3" };
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 
-assertObjectsEqual(ab, ba); // => true
+assertObjectsEqual(ab, ba); // => true */

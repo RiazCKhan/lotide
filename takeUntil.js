@@ -34,21 +34,20 @@ const takeUntil = (array, callback) => {
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, data => data < 0);
-console.log(results1);
+// console.log(results1);
 
 // Expected Output [ 1, 2, 5, 7, 2 ]
 
-console.log('---');
+// console.log('---');
 
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const results2 = takeUntil(data2, x => x === ',');
-console.log(results2);
+// console.log(results2);
 
 // Expected Output [ 'I\'ve', 'been', 'to', 'Hollywood' ]
 
-// Test
-
-const test1 = ['blue', 'red', 'green']
+// TEST CASES
+/* const test1 = ['blue', 'red', 'green']
 const test4 = [1, 2, 3, 4, 5] 
 const test2 = ['g', 'c', 't', 'm', 't']
 const test3 = ['cat', 'dog', 'rabbit', 'frog']
@@ -56,4 +55,4 @@ const test3 = ['cat', 'dog', 'rabbit', 'frog']
 console.log(assertArraysEqual(results1, test1));
 console.log(assertArraysEqual(results1, test2));
 console.log(assertArraysEqual(results2, test3));
-console.log(assertArraysEqual(results2, test4));
+console.log(assertArraysEqual(results2, test4)); */

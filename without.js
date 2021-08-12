@@ -29,6 +29,6 @@ const without = function(original, remove) {
   return result;
 };
 
-
-without([1, 2, 3], [1]); // => [2, 3]
-without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
+// TEST CASES
+/* without([1, 2, 3], [1]); // => [2, 3]
+without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"] */

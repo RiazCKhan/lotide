@@ -37,5 +37,5 @@ const source = {
 };
 
 results1 = findKey(source, data => data.stars === 2); // will review object[key] to determine if the data.stars (the value of the key) is equal to 2
-console.log(results1)
+// console.log(results1)
 // Expected Output "noma"

@@ -23,10 +23,10 @@ const findKeyByValue = function(obj, value) {
   drama:  "The Wire"
 };
 
-// --- test case to ensure correct value
+// --- TEST CASES to ensure correct value
 // console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"))
 // console.log(findKeyByValue(bestTVShowsByGenre, "The Expanse"))
 
-// --- provide test cases
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// TEST CASES
+/* assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); */

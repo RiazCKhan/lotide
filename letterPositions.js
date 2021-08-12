@@ -30,15 +30,15 @@ const letterPositions = function (sentence) {
       }
     } 
   }
-  console.log(result)
+  // console.log(result)
   return result;
 };
 
-letterPositions('hello')
+
+// TEST CASES
+/* letterPositions('hello')
 assertArraysEqual(letterPositions('hello').e, [1])
-
-
-console.log(lettPositions('lighthouse in the house'))
+console.log(lettPositions('lighthouse in the house')) */
 
 // the output for 'lighthouse in the house'
 // { 
