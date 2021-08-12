@@ -13,7 +13,7 @@ const middle = (arr) => {
   }
   else if (arr.length % 2 === 0) { // When arr is Even amount of elements return middle index values (2)
     index = Math.floor(arr.length / 2)
-    index2 = Math.floor(arr.length / 2 + 1)
+    index2 = Math.floor(arr.length / 2 - 1)
     return [arr[index], arr[index2]]
   }
 };
