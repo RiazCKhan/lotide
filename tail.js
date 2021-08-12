@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual');
+// const assertEqual = require('./assertEqual'); RCK built assertion
 
 const tail = (array) => {
   let lastIndex = array[array.length - 1]; // returning array at final position
