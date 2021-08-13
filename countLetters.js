@@ -1,4 +1,3 @@
-// FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`😇 Assertion Passed: ${actual} === ${expected}`);
@@ -9,7 +8,6 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(string) {
   const result = {};
-  // is a second binding needed?
   for (const letter of string) {
     if (!result[letter]) {
       result[letter] = 1;
@@ -21,4 +19,5 @@ const countLetters = function(string) {
 };
 
 // TEST CASE
-// console.log(assertEqual(countLetters('LHL').L, 2))
+assertEqual(countLetters('LHL').L, 2)
+assertEqual(countLetters('what a wonderful world').w, 3)
