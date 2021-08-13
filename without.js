@@ -30,5 +30,9 @@ const without = function(original, remove) {
 };
 
 // TEST CASES
-/* without([1, 2, 3], [1]); // => [2, 3]
-without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"] */
+without([1, 2, 3], [1]); // => [2, 3]
+without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
+
+// TEST CASES
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"])
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3])
