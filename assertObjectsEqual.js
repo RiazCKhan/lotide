@@ -6,9 +6,10 @@ const assertObjectsEqual = function(actual, expected) {
   } else {
     console.log(`🤬 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
-}; // -- The direct comparison of objects is not possible because objects store several data that are not stored in the corresponding memory blocks. 
-// therefore we use the direct comparison (by utilizing eqObjects) to check each key/value alongside the util library to make our 
-// assertobjectsequal function work
+}; 
+/* -- The direct comparison of objects is not possible because objects store several data that are not stored in the corresponding memory blocks. 
+therefore we use the direct comparison (by utilizing eqObjects) to check each key/value alongside the util library to make our 
+assertobjectsequal function work */
 
 const eqArrays = function(arrOne, arrTwo) {
   // console.log('test')
@@ -51,8 +52,9 @@ const eqObjects = function(object1, object2) {
 
     
 // TEST CASES
-/* const abc = { a: "1", b: "2", c: "3" };
+
+const abc = { a: "1", b: "2", c: "3" };
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 
-assertObjectsEqual(ab, ba); // => true */
+assertObjectsEqual(ab, ba); // => true
