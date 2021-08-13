@@ -36,11 +36,13 @@ const letterPositions = function (sentence) {
 
 
 // TEST CASES
-/* letterPositions('hello')
+console.log(letterPositions('hello'))
 assertArraysEqual(letterPositions('hello').e, [1])
-console.log(lettPositions('lighthouse in the house')) */
 
-// the output for 'lighthouse in the house'
+console.log('------')
+console.log(letterPositions('lighthouse in the house'))
+
+// EXPECTED OUTPUT FOR 'lighthouse in the house'
 // { 
 //   l: [0],
 //   i: [1, 11],
