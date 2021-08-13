@@ -49,27 +49,26 @@ const eqObjects = function(object1, object2) {
 
 
 // TEST CASES
-
-// const ab = { a: "1", b: "2" };
-// const ba = { b: "2", a: "1" };
-// console.log(eqObjects(ab, ba)); // => true
-
-// const abc = { a: "1", b: "2", c: "3" };
-// console.log(assertEquals(ab, abc)); // => false
-
-// Step 2 primitives test case console.log(eqObjects(ab, ba))
-
-// Step 3: Arrays as values test case for assertEqual Function
-// assertEqual((cd, dc), true) => assertion failed
-// assertEqual((cd, cd2), true) // => assertion failed
-
-
-// Step 4 + 5
-/* const cd = { c: "1", d: ["2", 3] };
+const ab = { a: "1", b: "2" };
+const ba = { b: "2", a: "1" };
+const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
-// eqObjects(cd, dc); // => true
-
 const cd2 = { c: "1", d: ["2", 3, 4] };
+const abc = { a: "1", b: "2", c: "3" };
 
-console.log(eqObjects(cd, cd2)); // => false */
+// STEP 1
+console.log(eqObjects(ab, ba)); // => true
+console.log(assertEqual(ab, abc)); // => false
+
+// STEP 2 Primitives 
+console.log(eqObjects(ab, ba))
+
+// STEP 3: Arrays as values Test Cases for AssertEqual()
+assertEqual((cd, dc), true) // => assertion failed
+assertEqual((cd, cd2), true) // => assertion failed
+
+// STEP 4 + 5
+assertEqual(eqObjects(cd, dc), true); // => true
+assertEqual(eqObjects(cd, cd2), true); // => false
+assertEqual(eqObjects(cd, cd2), false); // => false
 
