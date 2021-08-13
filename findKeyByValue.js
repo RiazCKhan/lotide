@@ -7,7 +7,8 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKeyByValue = function(obj, value) {
- for (const key of Object.keys(obj)) {
+  let keys = Object.keys(obj)
+ for (const key of keys) {
    // console.log(Object.keys(obj)) check loop through keys  
       if (obj[key] === value) { // match key and value argument
         // console.log(key, 'test') check what key[value] is being found
@@ -23,10 +24,10 @@ const findKeyByValue = function(obj, value) {
   drama:  "The Wire"
 };
 
-// --- TEST CASES to ensure correct value
-// console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"))
-// console.log(findKeyByValue(bestTVShowsByGenre, "The Expanse"))
+// TEST CASES to ensure correct value
+console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"))
+console.log(findKeyByValue(bestTVShowsByGenre, "The Expanse"))
 
-// TEST CASES
-/* assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); */
+// TEST CASES 2
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
